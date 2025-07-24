@@ -1,5 +1,3 @@
-from http.cookiejar import uppercase_escaped_char
-
 ventas = []
 
 while menuinteractivo !=7 :
