@@ -1,4 +1,6 @@
-while True:
+ventas = []
+menu = 0
+while menu !=7 :
  print("---MENÚ ANALISIS DE VENTAS---")
 
  print("\n 1. Ingrese las ventas(solo valores enteros positivos)")
@@ -8,10 +10,10 @@ while True:
  print("5. Contar cuentos dias superaron los Q1000")
  print("6. Clasificar cada venta:(>1000), media (500-1000), baja(<500)")
  print("7. Salir")
- menu = input("Ingrese la accion que desea realizar: ")
+
  match menu:
-     case "1":
-      print("")
+
+
 
 
 
