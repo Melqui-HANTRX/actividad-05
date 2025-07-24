@@ -1,6 +1,7 @@
 ventas = []
+menuinteractivo = ""
 
-while True:
+while menuinteractivo != "7":
     print("---MENÚ ANALISIS DE VENTAS---\n ")
 
     print("1. Ingrese las ventas (solo valores enteros positivos)")
@@ -15,15 +16,15 @@ while True:
 
     match menuinteractivo:
         case "1":
-            lista = input("¿Cuántos días desea ingresar?: ")
-            if lista.isdigit() and int(lista) > 0:
-                lista = int(lista)
+            diasinteractivos = input("¿Cuántos días desea ingresar?: ")
+            if diasinteractivos.isdigit() and int(diasinteractivos) > 0:
+                diasinteractivos = int(diasinteractivos)
                 i = 1
-                while lista != 0:
+                while diasinteractivos != 0:
                     ventasIngresadas = input(f"Favor de ingresar el valor de la venta del día {i}: ")
                     if ventasIngresadas.isdigit() and int(ventasIngresadas) > 0:
                         ventas.append(int(ventasIngresadas))
-                        lista -= 1
+                        diasinteractivos -= 1
                         i += 1
                     else:
                         print("La cantidad no es válida, el número debe ser entero positivo.")
@@ -92,8 +93,6 @@ while True:
 
         case "7":
             print("\nGracias por visitarnos.....")
-            break
 
         case _:
             print("Opción no válida.")
-
