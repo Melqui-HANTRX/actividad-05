@@ -1,5 +1,5 @@
 ventas = []
-menu = 0
+
 while menu !=7 :
  print("---MENÚ ANALISIS DE VENTAS---")
 
@@ -11,7 +11,12 @@ while menu !=7 :
  print("6. Clasificar cada venta:(>1000), media (500-1000), baja(<500)")
  print("7. Salir")
 
- match menu:
+menuinteractivo = input("Seleccione una opción: ")
+
+match menuinteractivo:
+ case "1":
+
+
 
 
 
