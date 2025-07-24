@@ -15,6 +15,11 @@ menuinteractivo = input("Seleccione una opción: ")
 
 match menuinteractivo:
  case "1":
+  lista = input("Cuantos dias desea ingresar?: ")
+  if lista.isdigit() and int(lista)>0:
+   lista = int(lista)
+   i =1
+
 
 
 
