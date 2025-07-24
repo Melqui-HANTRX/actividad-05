@@ -96,3 +96,4 @@ while menuinteractivo != "7":
 
         case _:
             print("Opción no válida.")
+
