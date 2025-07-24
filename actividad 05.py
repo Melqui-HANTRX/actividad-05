@@ -1,3 +1,5 @@
+from http.cookiejar import uppercase_escaped_char
+
 ventas = []
 
 while menuinteractivo !=7 :
@@ -54,8 +56,22 @@ match menuinteractivo:
    for i in ventas:
     totalventas += i
     recuentoventas = totalventas/len(ventas)
-    print(f"El promedio de ventas fue de Q{recuentoventas,2}")
-    s
+    print(f"El promedio de ventas fue de Q{round(recuentoventas,2)}")
+   else:
+    print("No hay ventas ingresadas aun. ")
+ case "5":
+  if len(ventas)>0:
+   conteoVentas = 0
+   for i in ventas:
+     if i>1000:
+      conteoVentas +=1
+     else:
+      continue
+   print(f"En {conteoVentas}(Dias) se superaron las ventas")
+  else:
+   print("No hay ventas ingresadas.")
+
+
 
 
 
