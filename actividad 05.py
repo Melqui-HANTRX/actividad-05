@@ -1,6 +1,6 @@
 ventas = []
 
-while menu !=7 :
+while menuinteractivo !=7 :
  print("---MENÚ ANALISIS DE VENTAS---")
 
  print("\n 1. Ingrese las ventas(solo valores enteros positivos)")
@@ -37,6 +37,28 @@ match menuinteractivo:
    else:
     print("No hay ventas ingresadas.")
  case "3":
+  if len(ventas)>0:
+    ventas_maximas = ventas[0]
+    ventas_minimas = ventas[0]
+    for i in ventas:
+      if i > ventas_maximas:
+          ventas_maximas = i
+      if i < ventas_minimas:
+           ventas_minimas = i
+    print(f"La venta minima(baja) fue Q{ventas_minimas} y la venta maxima(alta) fue Q{ventas_maximas}")
+  else:
+   print("No hay ventas ingresadas. ")
+ case "4":
+  if len(ventas)>0:
+   totalventas = 0
+   for i in ventas:
+    totalventas += i
+    recuentoventas = totalventas/len(ventas)
+    print(f"El promedio de ventas fue de Q{recuentoventas,2}")
+
+
+
+
 
 
 
