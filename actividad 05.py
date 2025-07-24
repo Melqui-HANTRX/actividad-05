@@ -19,6 +19,26 @@ match menuinteractivo:
   if lista.isdigit() and int(lista)>0:
    lista = int(lista)
    i =1
+   while lista: !=0:
+   ventasIngresadas = input(f"Favor de ingresar el valor de la venta del dia{i}: ")
+   if ventasIngresadas.isdigit() and int(ventasIngresadas)>0:
+    ventas.append(int(ventasIngresadas))
+    lista = int(lista)
+    i += 1
+   else:
+    print("La cantidad no es valida, el numero debe ser entero positivo.")
+  else:
+    print("La cantidad no es valida")
+ case "2":
+  if len(ventas)>0:
+   print("Las ventas ingresadas son: ")
+   for i in range(len(ventas)):
+    print(f"En el dia {i+1}  las ventas fueron de Q{ventas[i]}")
+   else:
+    print("No hay ventas ingresadas.")
+ case "3":
+
+
 
 
 
