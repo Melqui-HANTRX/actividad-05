@@ -55,6 +55,7 @@ match menuinteractivo:
     totalventas += i
     recuentoventas = totalventas/len(ventas)
     print(f"El promedio de ventas fue de Q{recuentoventas,2}")
+    s
 
 
 
