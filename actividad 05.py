@@ -68,6 +68,25 @@ match menuinteractivo:
    print(f"En {conteoVentas}(Dias) se superaron las ventas")
   else:
    print("No hay ventas ingresadas.")
+ case "6":
+  if len(ventas)>0:
+   ventasAltas = []
+   ventasBajas = []
+   ventasconmitidas = []
+
+   for i in ventas:
+     if i >1000:
+       ventasAltas.append(i)
+     elif i <=1000 and i >500:
+       ventasconmitidas.append(i)
+     if i <=500:
+         ventasBajas.append(i)
+   print("Las ventas son:")
+   print(f"Ventas mas altas: {ventasAltas}")
+   print(f"Ventas mas bajas: {ventasBajas}")
+   print(f"Ventas en las medias: {ventasconmitidas}")
+  else:
+   print("No hay ventas ingresadas")
 
 
 
